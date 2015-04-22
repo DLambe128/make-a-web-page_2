@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Udacity Project 0: Daniel Lambe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+    p {
+    font-family:Open Sans;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="lesson1">
+    <h1> Lesson 1: The Basics of the Web and HTML</h1>
+    <div class="">
+      <h4>Introduction</h4>
+      <p>
+        The “world wide web” is a collection of <b> HyperText Markup Language (HTML) </b> documents. Although web pages can can contain many types of files (such as plain text, HTML, images, videos, and music), HTML is the main component of most web pages.
+        The links between web pages are called <b>hyperlinks</b>.
+      </p>
+      <p>
+        Your <em>browser</em> (a program that runs on your computer, such as IE and Firefox) makes HTTP-protocol requests via to the <em>internet</em> (the world’s largest computer network) to <em>servers</em> (computers that host the files that make
+        up the web), and then the servers respond with files (HTML, videos, images, etc.) that your browser then displays.
+      </p>
+    </div>
+    <div class="">
+      <h4>More on HTML</h4>
+      <p>
+        HTML consists of text content (what the user sees), markup (what it looks like), references to other documents (such as images and videos), and links to other pages.
+      </p>
+      <p>
+        This line is just plain text. You can recognize markup in an HTML document by the tags that surround it. In HTML, the entire unit containing a tag, its associated closing tag, and the content within the tag pair is called an <b>element</b>.
+      </p>
+    </div>
+    <div class="">
+      <h4>Tags!</h4>
+      <p>
+        The <b>bold</b> tag &lt;b&gt; ... &lt;/b&gt; makes text <b>bolded</b>, whereas the <em>em</em> tag &lt;em&gt; ... &lt;/em&gt; makes text <em>italicized.</em>If you don't include a closing tag for the 'em' tag, everything after the opening tag
+        will be italicized (until you put in a closing tag).
+      </p>
+      <p>
+        Certain tags, like the anchor (or just 'a' tag) can contain one or more attributes (like href). Attributes are set equal to a value, which is enclosed in quotation marks. Anchor tags are used specifically for creating links to other files.
+        <a href="www.udacity.com">This link</a> back to the udacity web-site was created with an anchor tag pair with an 'href' attribute, like so:
+        <br>
+        <br> &lt;a href="Website URL">Display Text&lt;/a&gt;
+      </p>
+      <p>
+        The 'img' tag is used to link out to an image. The image tag usually contains 'src' and and 'alt' attributes. The 'alt' attribute value is what a user will see if the image (set equal to the 'src' attribute) doesn't load. Unlike other tags, the 'img'
+        tag does not use a closing tag! Lone tags (that don't have a closing tag) are called <b>void tags</b>.
+      </p>
+    </div>
+    <div class="">
+      <h4>Creating space in HTML</h4>
+      <p>
+        In HTML, white space (new lines, tabs, spaces) in your HTML document aren't visible in the browser. To force HTML to recognize a new line on your page (sort of like hitting the Enter key on Word), you have to put in a <b>br</b>, or <b>break tag</b>:
+        &lt;br&gt; As you can see, the br tag is a void tag.
+      </p>
+      <p>
+        The <b>p, or paragraph, tag</b> can be used to create an invisible box (with height and width) around its contents: &lt;p&gt;**content**&lt;/p&gt;
+      </p>
+    </div>
+    <div class="">
+      <h4>Inline vs. Block</h4>
+      <p>
+        Inline elements: 'b', 'em', 'br', 'img', 'a', 'strong' and 'span'
+        <br> Block elements: 'p', 'div' and 'form'
+        <br> See <a href="https://youtu.be/rv1Oy-EduCk">this video</a> to learn more about the span and div tags. We will learn more about these tags in future lessons!
+      </p>
+    </div>
+  </div>
+  <div class="lesson2 bold">
+    <h1>Lesson 2: Creating Structured Documents with HTML</h1>
+    <div class="">
+      <b>Structure of HTML documents</b>
+      <p>
+        All HTML documents must have the same structure: &lt;!DOCTYPE html&gt;, the &lt;html&gt; tags, the &lt;head&gt; (with the link and title tags inside), and the &lt;body&gt; tags. HTML tells the browser where to find style information with the link tag
+        in head tag (Sublime Text will auto-complete w/ tab). For code readability, html structure is indented.
+      </p>
+    </div>
+    <div class="">
+      <b>Introduction</b>
+      <p>
+        -Front end web developers use HTML (structure), CSS (style) and Javascript (interactive components) to modify the appearance of a web page. This type of development produces immediate visible changes on a browser that can be seen by the user.
+        <br> -
+        <a href="https://youtu.be/xIOeccZZ-5g">House analogy of web pages</a>
+      </p>
+    </div>
+    <div class="">
+      <b>Developer Tools</b>
+      <p>
+        HTML/CSS elements in Google Chrome: <b> 3-pancake structure</b> (URHC) <b> &rarr; More Tools &rarr; Developer Tools </b> If you highlight over HTML elements with the Developer Tools, it will simultaneously highlight the associated area of that
+        particular web page. Not all elements are visible, though! Changing HTML/CSS with developer tools doesn’t change the actual HTML/CSS Files (experimentation). Reset changes with refresh button.
+      </p>
+    </div>
+    <div class="">
+      <b>Definitions of HTML, CSS and DOM</b>
+      <p>
+        -HTML (language of web) has specific syntax and rules; these dictate structure & content of a page … flags: tag, elements and attributes. All HTML elements have a rectangular structure!
+        <br>
+        <br> -Document Object Model (DOM) = standard tree-like convention for representing & interacting with HTML elements. See <a href="https://youtu.be/y5NbZSvn5N8">here</a> for an example/exercise.
+        <br>
+        <br> -CSS also has a syntax with rules, which dictate the visual elements of page - text color, font size, border-width etc. CSS commonly uses class attributes, which are placed within HTML tags, thereby modifying the content within. The class value
+        name is usually descriptive of the page section or element it modifies; classes can be re-used if you want separate sections of a page to look similar.
+        <br> -See <a href="https://youtu.be/_optftESD0M">this video</a> to see how CSS style can change rect. into a circle
+      </p>
+    </div>
+    <div class="">
+      <b>Project planning for web pages (i.e., boxify'ing)</b>
+      <p>
+        Front-end web developers (developers that design web pages) use a variety of techniques to boxify a page/design:
+      </p>
+      <div class="flexbox">
+        <ul>
+          <li>Draw boxes with a graphics program</li>
+          <li>Doodle on a piece of paper</li>
+          <li>Print the design page and draw on it</li>
+        </ul>
+        <ul>
+          <li>Print the design page and cut it w/ scissors</li>
+          <li>With experience, visualizing the page</li>
+        </ul>
+      </div>
+      <p>
+        -Developers define boxes in HTML with div tags. You can use a div tag for each box in the design.
+        <br> -Boxes are in different sizes, with different locations; you can do this by giving each element a class attribute. <a href="https://youtu.be/JsH_eSZGhyg">For example</a> (below the screenshot and description class div's are boxes within the app
+        div box),
+        <br>
+        <br>
+      </p>
+    </div>
+  </div>
+  <div class="lesson3">
+    <h1>Lesson 3: Adding CSS Style and HTML Structure</h1>
+    <div class="bold">
+      <b>More on CSS</b>
+      <p>CSS, again, determines the visual structure of the page. With CSS, the most specific rule is applied to every element ("Cascading"). This is also called <b>inheritance</b>, which you can read more about <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">here</a>.
+        Understanding inheritance requires <a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3521029360/m-3503049573">abstract thinking</a>. It is important to note that changing the visual elements of a page only changes how the element is displayed,
+        and does not modify the element itself.
+      </p>
+      <p>
+        It is important to avoid repeating yourself in computer programming. For example, if you want several paragraphs on a web page to look the same, it is more efficient/logical to write one CSS class that modifies all of them (as opposed to writing individual
+        classes to modify each one). If you aren't efficient in this way, your code will become extremely lengthy and hard to sort through, so if you have bugs it can be difficult to figure out what needs fixing. Also, if you avoid repetition, you are
+        using your time more efficiently, and making it easier for others to view/modify/comment on your design.
+        <p>
+          <p>You can also avoid repetition by being careful about where you put classes in your HTML. For example, if you want all child elements within a parent element to look the same, you can avoid repetition by putting the modifying class in the parent
+            tag, as opposed to each individual child tag.
+    </div>
+    <div>
+      <b>Selectors</b>
+      <p>
+        CSS can not only modify classes (".pageheader"), but also repeated elements on a page (like p, h1, etc.) - these are called selectors. When we say something like "padding:20px;", padding is the <em>property</em> and 20px is the <em>value</em>.
+        You can read more about selectors, including combined selectors, <a href="https://css-tricks.com/how-css-selectors-work/">here</a>. Check out Andy Brown's <a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-4131369051/m-3611108698">CSS Summary and Reference</a>,
+        which includes a section on how to include CSS styling in a web page:
+      </p>
+      <ul>
+        <li>Write CSS in the &lt;head&gt;of the HTML doc (with a&lt;style&gt;element) - use for smaller projects</li>
+        <li>Link your HTML to a separate CSS file (with a &lt;link&gt; tag inside the head tag, with distinct HTML and CSS files). NOTE: For this method, make sure the HTML and CSS file are in the same folder.</li>
+        <li>Write your style inline with the HTML - generally not recommended, because leads to a lot of repeated code. e.g., &lt;div style="background-color: red; color: white"&gt;</li>
+      </ul>
+    </div>
+    <div>
+      <b>Using Semantic Tags</b>
+      <p>
+        Make sure to use the right type of element for certain parts of the page, depending on what the purpose of the element is. For example, use header elements for title sections. Search engines use headers to index the structure and content of a web page.
+        Note that using an h1 HTML tag around text, the text increases in size and a box is created around the element (extra space above and below text).
+      </p>
+    </div>
+    <div>
+      <b>More on the Box Model</b>
+      <p>
+        Boxes on web pages consists of content, padding, border and margins (the latter 3 must be added with CSS properties). The Computed tab in developer tools will show all of these and their sizes.
+      </p>
+      <p>
+        The <b>content</b> is the image or text that appears on the web site, the "nucleus". The <b>padding</b> surrounds the content, and functions to clear an area between the content and border; it inherits the background color of the box. The <b>border</b>        surrounds the content and padding, inheriting the color property of the box. The <b>margin</b>, which doesn't have a background color (transparent), clears an area between that element and the next element.
+      </p>
+      <p>
+        By default, the size of the <em>element itself</em> is equal to the sum of the border, padding and content widths (margin not included). To avoid having to re-calculate the actual width of the element after changing any of these values (border,
+        padding, or content), use the CSS property "box-sizing:border-box;". This makes the size of the element include both the border and padding - you set the width of the overall box, and the size of the box always stays the same. This property has
+        been developed recently, so you must include browser-specific prefixes so older browsers can display it.
+      </p>
+      <p>
+        You can also set box sizes with percentages, as opposed to pixels (box sizes stay that that pixel size, regardless of page size); in this case, size will change depending on how large the screen is. The max width property determines the maximum width
+        a box can take-up as a browser window is made larger.
+      </p>
+    </div>
+    <div>
+      <b>Box Positioning</b>
+      <p>In order to have boxes appear next to each other (as opposed to stacked on top of one another), set display:flex; within the parent element. The size of the boxes must be less than 100%. You can read more about the wonder that is flex box <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">here</a>.
+        <a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-4131369051/m-3642758701">By default, divs are block elements (as opposed to inline), and therefore they take up the entire width of a page; display:flex; overrides this behavior.</a>
+        <div>
+          <b>Important Links</b>
+          <div style="color:red; font-family:Consolas">
+            <p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference guide</a>: CSS elements, attributes and values, including hexadecimal colors ("color:#FFFFFF").
+              <br>
+              <a href="http://validator.w3.org/#validate_by_input">W3C HTML Markup Validation Service</a>: Test HTML for compliance (displays correctly in different browsers).
+              <br>
+              <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">W3C CSS Markup Validation Service</a>: Test CSS for compliance (displays correctly in different browsers).
+              <br>
+              <a href="http://stackoverflow.com/">Stack Overflow</a>: Question and answer site for professional/amateur programmers
+            </p>
+          </div>
+        </div>
+        <div>
+          <b>Closing Notes</b>
+        </div>
+        <div class="flexbox">
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDsVGxNb37OdtDfW4GK_ofK1BZ7--cxMJexPOeSGuGeq6pmDL1" alt="hulk">
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDsVGxNb37OdtDfW4GK_ofK1BZ7--cxMJexPOeSGuGeq6pmDL1" alt="hulk">
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDsVGxNb37OdtDfW4GK_ofK1BZ7--cxMJexPOeSGuGeq6pmDL1" alt="hulk">
+        </div>
+        <div>
+          <p style="text-align:center;font-family:cursive;">Thanks for visiting my page!</p>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
